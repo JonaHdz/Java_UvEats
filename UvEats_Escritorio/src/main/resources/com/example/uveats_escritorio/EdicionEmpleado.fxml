@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.uveats_escritorio.EdicionEmpleadoController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fitHeight="87.0" fitWidth="126.0" layoutX="31.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Img/Logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="118.0" layoutY="50.0" text="Registro/ Edición de empelados">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Label>
+        <Button layoutX="572.0" layoutY="564.0" mnemonicParsing="false" onAction="#btn_regresar" prefHeight="39.0" prefWidth="146.0" text="Regresar">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Button>
+        <Button layoutX="766.0" layoutY="564.0" mnemonicParsing="false" onAction="#btn_guardar" prefHeight="39.0" prefWidth="146.0" text="Guardar">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="695.0" layoutY="452.0" mnemonicParsing="false" onAction="#btn_subirFoto" text="Subir foto">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="img_foto" fitHeight="230.0" fitWidth="200.0" layoutX="650.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="142.0" layoutY="217.0" text="*Nombre:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="142.0" layoutY="264.0" text="*Apellido:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="153.0" layoutY="311.0" text="*Correo:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="119.0" layoutY="359.0" text="*Contraseña:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="68.0" layoutY="407.0" text="Numero telefonico:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tf_nombre" layoutX="244.0" layoutY="211.0" promptText="jose" text="a">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tf_apellido" layoutX="244.0" layoutY="258.0" promptText="hernandez">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tf_correo" layoutX="244.0" layoutY="305.0" promptText="correo@hotmail.com">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tf_telefono" layoutX="244.0" layoutY="401.0" promptText="2281765417">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="tf_contrasena" layoutX="244.0" layoutY="353.0" promptText="************************">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </PasswordField>
+        <TextField layoutX="479.0" layoutY="218.0" />
+    </children>
+
+</AnchorPane>

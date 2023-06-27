@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uveats_escritorio.HistorialDeCompras">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="151.0" layoutX="33.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Img/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="139.0" text="PLATILLOS/PRODUCTOS">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="804.0" layoutY="557.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="131.0" text="Regresar">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="786.0" layoutY="72.0" text="Buscar por fecha">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="654.0" layoutY="114.0" prefHeight="48.0" prefWidth="285.0" />
+      <TableView layoutX="108.0" layoutY="220.0" prefHeight="329.0" prefWidth="820.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1024.0" style="-fx-background-color: FAFAFA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uveats_escritorio.MenuCliente">
+   <children>
+      <Button layoutX="167.0" layoutY="16.0" mnemonicParsing="false" onAction="#btn_ActualizarDatos" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: D6D6D6;" text="Actualizar datos">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="706.0" layoutY="16.0" mnemonicParsing="false" onAction="#btn_CerrarSesion" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: D6D6D6;" text="Cerrar sesión">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="341.0" layoutY="16.0" mnemonicParsing="false" onAction="#btn_HistorialCompras" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: D6D6D6;" text="Historial de compras">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb_Usuario" layoutX="885.0" layoutY="17.0" prefHeight="30.0" prefWidth="130.0" text="Usuario">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="79.0" layoutY="123.0" text="Platillos/Productos">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="158.0" text="Selecciona una categoria">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cb_categorias" layoutX="79.0" layoutY="192.0" prefHeight="31.0" prefWidth="256.0" promptText="Comida mexicana/Galletas..." />
+      <TableView fx:id="tb_Productos" layoutX="67.0" layoutY="250.0" prefHeight="367.0" prefWidth="598.0">
+        <columns>
+
+        </columns>
+      </TableView>
+      <Button layoutX="780.0" layoutY="434.0" mnemonicParsing="false" onAction="#btn_ReseñarPlatillo" prefHeight="31.0" prefWidth="209.0" style="-fx-background-color: D6D6D6;" text="Reseñar platillo">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="780.0" layoutY="504.0" mnemonicParsing="false" onAction="#btn_VerReseñasPlatillo" prefHeight="31.0" prefWidth="209.0" style="-fx-background-color: D6D6D6;" text="Ver reseña de platillo">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="780.0" layoutY="566.0" mnemonicParsing="false" onAction="#btn_Ordenar" prefHeight="31.0" prefWidth="209.0" style="-fx-background-color: D6D6D6;" text="Ordenar">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="87.0" fitWidth="126.0" layoutX="31.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Img/Logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="512.0" layoutY="16.0" mnemonicParsing="false" onAction="#btn_Notificaciones" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: D6D6D6;" text="Notificaciones">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

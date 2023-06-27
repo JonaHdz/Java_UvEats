@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uveats_escritorio.ListaResenasController">
+   <children>
+      <Label layoutX="128.0" layoutY="60.0" text="Lista de reseñas">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="103.0" layoutX="38.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Img/Logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tf_productoNombre" disable="true" layoutX="38.0" layoutY="113.0" prefHeight="44.0" prefWidth="492.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tb_resenas" layoutX="38.0" layoutY="163.0" prefHeight="379.0" prefWidth="936.0">
+        <columns>
+        </columns>
+      </TableView>
+      <Button layoutX="795.0" layoutY="564.0" mnemonicParsing="false" onAction="#btn_regresar" prefHeight="39.0" prefWidth="179.0" text="Regresar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
